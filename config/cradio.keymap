@@ -87,13 +87,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &kp T     &kp T     &kp T    &bt BT_SEL 0    &kp T     &kp T     &kp T     &kp T    &sys_reset
+           &sys_reset  &kp T     &kp T     &kp T    &bt &kp T    &kp T     &kp T     &kp T     &kp T    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &kp T  &kp T     &kp T     &kp T    &bt BT_SEL 1    &kp T     &kp T     &kp T     &kp T    &kp T
+          &kp T  &kp T     &kp T     &kp T    &kp T    &kp T     &kp T     &kp T     &kp T    &kp T
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &kp T     &kp T     &kp T    &bt BT_CLR &bt BT_SEL 2    &kp T     &kp T     &kp T     &kp T     &kp T
+            &kp T     &kp T     &kp T    &bt BT_CLR &bt &kp T    &kp T     &kp T     &kp T     &kp T     &kp T
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp T     &kp T         &kp T     &kp T
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
