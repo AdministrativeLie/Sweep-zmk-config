@@ -38,6 +38,8 @@
         layer3switch {
             bindings = <&mo 3>;
             key-positions = <30 33>;
+            timeout-ms = <0>;
+            layers = <0 1 2 3 4 5>;
         };
     };
 
