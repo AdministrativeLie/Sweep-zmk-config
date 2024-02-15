@@ -140,9 +140,9 @@
 
         layer_3 {
             bindings = <
-&kp LG(LS(N5))  &mpApp     &mpDoc     &browse    &onepass     &icloud    &code           &kp UP_ARROW  &kp LG(A)        &kp BSPC
-&kp SPACE       &kp TAB    &kp LCTRL  &kp LALT   &kp LGUI     &kp LG(W)  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LG(LA(S))
-&kp LG(Z)       &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(S)    &open      &cd             &ls           &kp ESC          &kp LSHFT
+&kp LG(LS(N5))  &mpApp     &mpDoc     &browse    &onepass     &icloud    &code           &kp UP_ARROW    &kp LG(A)        &kp BSPC
+&kp SPACE       &kp TAB    &kp LCTRL  &kp LALT   &kp LGUI     &kp LG(W)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(LA(S))
+&kp LG(Z)       &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(S)    &open      &cd             &ls             &kp ESC          &kp LSHFT
                                       &trans     &trans       &trans     &trans
             >;
         };
