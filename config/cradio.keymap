@@ -111,45 +111,45 @@
 
         layer_0 {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp LS(QMARK)
-&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp RET
+&kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp RET
+&kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp P
+&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp LS(QMARK)
                      &mo 1  &kp SPACE    &kp LSHFT  &mo 2
             >;
         };
 
         layer_1 {
             bindings = <
-&kp N1              &kp N2               &kp N3     &kp N4        &kp N5          &kp N6                   &kp N7         &kp N8      &kp N9        &kp N0
-&kp ESC             &kp TAB              &kp LCTRL  &kp LALT      &kp LGUI        &kp LC(LA(KP_NUMBER_0))  &kp LG(SLASH)  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
-&kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp F9     &bt BT_SEL 0  &bt BT_SEL 1    &kp CAPS                 &tog 4         &tog 5      &kp LC(C)     &kp DELETE
+&kp N1              &kp N2               &kp N3     &kp N4        &kp N5          &kp N6                   &kp N7         &kp N8      &kp N9        &kp DEL
+&kp ESC             &kp TAB              &kp LCTRL  &kp LALT      &kp LGUI        &kp LC(LA(KP_NUMBER_0))  &kp LG(SLASH)  &kp K_MUTE  &kp C_VOL_DN  &kp N0
+&kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp F9     &bt BT_SEL 0  &bt BT_SEL 1    &kp CAPS                 &tog 4         &tog 5      &kp LC(C)     &kp C_VOLUME_UP
                                                     &trans        &trans          &trans                   &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)   &kp EQUAL
-&kp LS(TILDE)  &kp BSLH    &kp LS(PIPE)   &kp LS(LT)    &kp LS(GT)       &kp SQT        &kp LS(DQT)   &kp MINUS     &kp LS(UNDER)  &kp FSLH
-&kp GRAVE      &kp SEMI    &kp LBKT       &kp LS(LBRC)  &kp LS(LPAR)     &kp LS(RPAR)   &kp LS(RBRC)  &kp RBKT      &kp LS(COLON)  &kp BSPC
+&kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)   &kp BSPC
+&kp LS(TILDE)  &kp BSLH    &kp LS(PIPE)   &kp LS(LT)    &kp LS(GT)       &kp SQT        &kp LS(DQT)   &kp MINUS     &kp LS(UNDER)  &kp EQUAL
+&kp GRAVE      &kp SEMI    &kp LBKT       &kp LS(LBRC)  &kp LS(LPAR)     &kp LS(RPAR)   &kp LS(RBRC)  &kp RBKT      &kp LS(COLON)  &kp FSLH
                                           &trans        &trans           &trans         &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&kp LG(LS(N5))  &mpApp     &mpDoc     &browse    &onepass     &icloud    &code           &kp UP_ARROW  &kp LG(A)        &kp LG(LA(S))
-&kp SPACE       &kp TAB    &kp LCTRL  &kp LALT   &kp LGUI     &kp LG(W)  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT
-&kp LG(Z)       &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(S)    &open      &cd             &ls           &kp ESC          &kp BACKSPACE
+&kp LG(LS(N5))  &mpApp     &mpDoc     &browse    &onepass     &icloud    &code           &kp UP_ARROW  &kp LG(A)        &kp BSPC
+&kp SPACE       &kp TAB    &kp LCTRL  &kp LALT   &kp LGUI     &kp LG(W)  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LG(LA(S))
+&kp LG(Z)       &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(S)    &open      &cd             &ls           &kp ESC          &kp LSHFT
                                       &trans     &trans       &trans     &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R   &kp T        &kp Y     &kp U     &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F   &kp G        &kp H     &kp J     &kp K      &kp L    &kp LSHFT
-&kp Z  &kp X  &kp C  &kp V   &kp B        &kp N     &kp M     &kp COMMA  &kp DOT  &kp RET
+&kp Q  &kp W  &kp E  &kp R   &kp T        &kp Y     &kp U     &kp I      &kp O    &kp RET
+&kp A  &kp S  &kp D  &kp F   &kp G        &kp H     &kp J     &kp K      &kp L    &kp P
+&kp Z  &kp X  &kp C  &kp V   &kp B        &kp N     &kp M     &kp COMMA  &kp DOT  &kp LSHFT
                      &tog 0  &kp LCTRL    &kp LALT  &kp LGUI
             >;
         };
