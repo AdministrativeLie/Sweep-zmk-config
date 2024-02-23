@@ -37,14 +37,14 @@
 
         layer3switch {
             bindings = <&mo 3>;
-            key-positions = <30 33>;
+            key-positions = <20 29>;
             timeout-ms = <0>;
             layers = <0 1 2 3 4 5 6>;
         };
 
         layer-4 {
             bindings = <&mo 6>;
-            key-positions = <26 30>;
+            key-positions = <26 29>;
             layers = <4 0 1 2 3 5 6>;
         };
     };
@@ -119,46 +119,46 @@
 
         layer_0 {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y     &kp U  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G        &kp H     &kp J  &kp K      &kp L    &kp LS(QMARK)
-&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N     &kp M  &kp COMMA  &kp DOT  &kp LSHFT
-                     &mo 1  &kp SPACE    &kp BSPC  &mo 2
+&kp Q  &kp W  &kp E  &kp R           &kp T        &kp Y     &kp U      &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F           &kp G        &kp H     &kp J      &kp K      &kp L    &kp Z
+&mo 1  &kp X  &kp C  &kp V           &kp B        &kp N     &kp M      &kp COMMA  &kp DOT  &mo 2
+                     &kp LEFT_SHIFT  &kp SPACE    &kp BSPC  &kp ENTER
             >;
         };
 
         layer_1 {
             bindings = <
-&kp N1              &kp N2               &kp N3     &kp N4        &kp N5          &kp N6                   &kp N7         &kp N8      &kp N9        &kp N0
-&kp ESC             &kp TAB              &kp LCTRL  &kp LALT      &kp LGUI        &kp LC(LA(KP_NUMBER_0))  &kp LG(SLASH)  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
-&kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp F9     &bt BT_SEL 0  &bt BT_SEL 1    &kp CAPS                 &tog 4         &tog 5      &kp LC(C)     &kp LEFT_SHIFT
-                                                    &trans        &trans          &kp ENTER                &trans
+&kp N1   &kp N2               &kp N3     &kp N4        &kp N5          &kp N6                   &kp N7         &kp N8      &kp N9        &kp N0
+&kp ESC  &kp TAB              &kp LCTRL  &kp LALT      &kp LGUI        &kp LC(LA(KP_NUMBER_0))  &kp LG(SLASH)  &kp K_MUTE  &kp C_VOL_DN  &kp LC(LEFT)
+&trans   &kp RC(RIGHT_ARROW)  &kp F9     &bt BT_SEL 0  &bt BT_SEL 1    &kp CAPS                 &tog 4         &tog 5      &kp LC(C)     &kp SLASH
+                                         &trans        &trans          &kp DELETE               &trans
             >;
         };
 
         layer_2 {
             bindings = <
 &kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(PLUS)   &kp EQUAL
-&kp LS(TILDE)  &kp BSLH    &kp LS(PIPE)   &kp LS(LT)    &kp LS(GT)       &kp SQT        &kp LS(DQT)   &kp MINUS     &kp LS(UNDER)  &kp FSLH
-&kp GRAVE      &kp SEMI    &kp LBKT       &kp LS(LBRC)  &kp LS(LPAR)     &kp LS(RPAR)   &kp LS(RBRC)  &kp RBKT      &kp LS(COLON)  &kp LEFT_SHIFT
-                                          &trans        &trans           &kp DELETE     &trans
+&kp LS(TILDE)  &kp BSLH    &kp LS(PIPE)   &kp LS(LT)    &kp LS(GT)       &kp SQT        &kp LS(DQT)   &kp MINUS     &kp LS(UNDER)  &kp GRAVE
+&trans         &kp SEMI    &kp LBKT       &kp LS(LBRC)  &kp LS(LPAR)     &kp LS(RPAR)   &kp LS(RBRC)  &kp RBKT      &kp LS(COLON)  &trans
+                                          &trans        &trans           &kp BACKSPACE  &trans
             >;
         };
 
         layer_3 {
             bindings = <
 &kp LG(LS(N5))  &mpApp     &mpDoc     &browse    &onepass     &icloud        &code           &kp UP_ARROW    &kp LG(A)        &kp LG(LA(S))
-&kp SPACE       &kp TAB    &kp LCTRL  &kp LALT   &kp LGUI     &kp LG(W)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LSHFT
-&kp LG(Z)       &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(S)    &open          &cd             &ls             &kp ESC          &kp LEFT_SHIFT
+&kp SPACE       &kp TAB    &kp LCTRL  &kp LALT   &kp LGUI     &kp LG(W)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(Z)
+&trans          &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(S)    &open          &cd             &ls             &kp ESC          &trans
                                       &trans     &trans       &kp BACKSPACE  &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R   &kp T       &kp Y      &kp U     &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F   &kp G       &kp H      &kp J     &kp K      &kp L    &kp LSHFT
-&kp Z  &kp X  &kp C  &kp V   &kp B       &kp N      &kp M     &kp COMMA  &kp DOT  &kp RET
-                     &tog 4  &kp LGUI    &kp LCTRL  &kp LALT
+&kp Q   &kp W  &kp E  &kp R           &kp T       &kp Y      &kp U     &kp I      &kp O    &kp P
+&kp A   &kp S  &kp D  &kp F           &kp G       &kp H      &kp J     &kp K      &kp L    &kp Z
+&tog 4  &kp X  &kp C  &kp V           &kp B       &kp N      &kp M     &kp COMMA  &kp DOT  &none
+                      &kp LEFT_SHIFT  &kp LGUI    &kp LCTRL  &kp LALT
             >;
         };
 
@@ -166,8 +166,8 @@
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp F11  &kp F12  &none   &none   &none     &none   &none   &none   &none   &none
-&none    &none    &none   &none   &none     &none   &none   &none   &none   &none
-                          &to 5   &none     &none   &none
+&tog 5   &none    &none   &none   &none     &none   &none   &none   &none   &none
+                          &none   &none     &none   &none
             >;
         };
 
