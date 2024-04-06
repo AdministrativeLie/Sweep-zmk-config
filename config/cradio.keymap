@@ -49,30 +49,13 @@
         letter_S {
             bindings = <&kp S>;
             key-positions = <11 12>;
+            layers = <0>;
         };
 
         letter_F {
             bindings = <&kp F>;
             key-positions = <12 13>;
             layers = <0>;
-        };
-
-        gui {
-            bindings = <&kp LGUI>;
-            key-positions = <10 31>;
-            layers = <0 1 2 3>;
-        };
-
-        ctrl {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <20 32>;
-            layers = <0 1 2 3>;
-        };
-
-        alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <10 33>;
-            layers = <0 2 1 3>;
         };
 
         letter_u {
@@ -201,7 +184,7 @@
         qet {
             bindings = <
 &trans  &kp Q   &kp E   &kp T      &trans       &trans    &kp Y    &kp I   &kp P   &trans
-&none   &kp A   &kp D   &kp G      &trans       &trans    &kp H    &kp K   &kp L   &mo 1
+&mo 4   &kp A   &kp D   &kp G      &trans       &trans    &kp H    &kp K   &kp L   &mo 1
 &trans  &trans  &trans  &trans     &tog 3       &tog 2    &trans   &trans  &trans  &trans
                         &kp LSHFT  &kp SPACE    &kp BSPC  &kp RET
             >;
@@ -231,6 +214,15 @@
 &trans  &none      &none     &kp SQT    &trans    &trans  &kp COMMA  &kp DOT   &kp SEMI   &trans
 &trans  &trans     &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
                              &trans     &trans    &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans      &trans     &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans      &trans     &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans      &trans     &trans    &trans  &trans  &trans
+                        &kp LSHFT  &kp LGUI    &kp LCTRL  &kp LALT
             >;
         };
     };
