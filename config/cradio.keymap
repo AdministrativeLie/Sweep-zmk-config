@@ -238,19 +238,19 @@
 
         qet {
             bindings = <
-&trans          &kp Q   &kp E   &kp T   &trans       &trans    &kp Y   &kp I   &kp P   &trans
-&kp LEFT_SHIFT  &kp A   &kp D   &kp G   &trans       &trans    &kp H   &kp K   &kp L   &kp ENTER
-&trans          &trans  &trans  &trans  &none        &none     &trans  &trans  &trans  &trans
-                                &mo 3   &kp SPACE    &kp BSPC  &mo 1
+&trans  &kp Q   &kp E   &kp T      &trans       &trans    &kp Y    &kp I   &kp P   &trans
+&mo 3   &kp A   &kp D   &kp G      &trans       &trans    &kp H    &kp K   &kp L   &mo 1
+&trans  &trans  &trans  &trans     &none        &none     &trans   &trans  &trans  &trans
+                        &kp LSHFT  &kp SPACE    &kp BSPC  &kp RET
             >;
         };
 
         zcb {
             bindings = <
-&trans     &kp N1  &kp N3  &kp N5  &trans       &trans    &kp N6  &kp N8  &kp N0    &trans
-&kp LSHFT  &kp Z   &kp C   &kp B   &trans       &trans    &kp N   &kp M   &kp FSLH  &kp ENTER
-&trans     &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans    &trans
-                           &mo 3   &kp SPACE    &kp BSPC  &mo 1
+&trans  &kp N1  &kp N3  &kp N5  &trans    &trans   &kp N6  &kp N8  &kp N0    &trans
+&trans  &kp Z   &kp C   &kp B   &trans    &trans   &kp N   &kp M   &kp FSLH  &trans
+&trans  &trans  &trans  &trans  &trans    &trans   &trans  &trans  &trans    &trans
+                        &trans  &trans    &kp DEL  &trans
             >;
         };
 
