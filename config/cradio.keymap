@@ -22,14 +22,7 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <0 0>;
-            then-layer = <0>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
@@ -111,6 +104,54 @@
             key-positions = <7 8>;
             layers = <1>;
         };
+
+        arrows {
+            bindings = <&tog 2>;
+            key-positions = <6 7 8 3 2 1>;
+            layers = <0 2 1 3>;
+        };
+
+        gui1 {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <8 18>;
+            layers = <0 1 3>;
+        };
+
+        gui2 {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <1 11>;
+            layers = <0 1 3>;
+        };
+
+        crtl1 {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <2 12>;
+            layers = <0 1 3>;
+        };
+
+        crtl2 {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <7 17>;
+            layers = <0 1 3>;
+        };
+
+        alt1 {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <16 6>;
+            layers = <0 1 3>;
+        };
+
+        alt2 {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <3 13>;
+            layers = <0 1 3>;
+        };
+
+        f-layers {
+            bindings = <&mo 4>;
+            key-positions = <30 33>;
+            layers = <0 2 1 3 4>;
+        };
     };
 
     macros {
@@ -176,6 +217,20 @@
             bindings = <&kp LS(B) &kp R &kp O &kp W &kp S &kp E &kp R>;
             label = "BROWSE";
         };
+
+        cmd: cmd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(N0))>;
+            label = "CMD";
+        };
+
+        closecmd: closecmd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(W)>;
+            label = "CLOSECMD";
+        };
     };
 
     keymap {
@@ -183,26 +238,26 @@
 
         qet {
             bindings = <
-&trans  &kp Q   &kp E   &kp T      &trans       &trans    &kp Y    &kp I   &kp P   &trans
-&mo 4   &kp A   &kp D   &kp G      &trans       &trans    &kp H    &kp K   &kp L   &mo 1
-&trans  &trans  &trans  &trans     &tog 3       &tog 2    &trans   &trans  &trans  &trans
-                        &kp LSHFT  &kp SPACE    &kp BSPC  &kp RET
+&trans          &kp Q   &kp E   &kp T   &trans       &trans    &kp Y   &kp I   &kp P   &trans
+&kp LEFT_SHIFT  &kp A   &kp D   &kp G   &trans       &trans    &kp H   &kp K   &kp L   &kp ENTER
+&trans          &trans  &trans  &trans  &none        &none     &trans  &trans  &trans  &trans
+                                &mo 3   &kp SPACE    &kp BSPC  &mo 1
             >;
         };
 
         zcb {
             bindings = <
-&trans  &kp N1  &kp N3  &kp N5     &trans       &trans    &kp N6   &kp N8  &kp N0    &trans
-&trans  &kp Z   &kp C   &kp B      &trans       &trans    &kp N    &kp M   &kp FSLH  &trans
-&trans  &trans  &trans  &trans     &trans       &trans    &trans   &trans  &trans    &trans
-                        &kp LSHFT  &kp SPACE    &kp BSPC  &kp RET
+&trans     &kp N1  &kp N3  &kp N5  &trans       &trans    &kp N6  &kp N8  &kp N0    &trans
+&kp LSHFT  &kp Z   &kp C   &kp B   &trans       &trans    &kp N   &kp M   &kp FSLH  &kp ENTER
+&trans     &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans    &trans
+                           &mo 3   &kp SPACE    &kp BSPC  &mo 1
             >;
         };
 
         arrows {
             bindings = <
 &trans  &kp ESC    &kp TAB   &kp CAPS  &trans    &trans  &none     &kp UP    &none      &trans
-&trans  &kp LCTRL  &kp LGUI  &kp LALT  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&trans  &kp LCTRL  &kp LGUI  &kp LALT  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &trans  &trans     &trans    &trans    &trans    &trans  &trans    &trans    &trans     &trans
                              &trans    &trans    &trans  &trans
             >;
@@ -210,19 +265,19 @@
 
         layer_3 {
             bindings = <
-&trans  &kp GRAVE  &kp BSLH  &kp EQUAL  &trans    &trans  &kp LBKT   &kp RBKT  &kp MINUS  &trans
-&trans  &none      &none     &kp SQT    &trans    &trans  &kp COMMA  &kp DOT   &kp SEMI   &trans
-&trans  &trans     &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
-                             &trans     &trans    &trans  &trans
+&trans  &kp GRAVE  &kp BSLH   &kp EQUAL  &trans    &trans  &kp LBKT   &kp RBKT  &kp MINUS  &trans
+&trans  &cmd       &closecmd  &kp SQT    &trans    &trans  &kp COMMA  &kp DOT   &kp SEMI   &trans
+&trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans    &trans     &trans
+                              &trans     &trans    &trans  &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans      &trans     &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans      &trans     &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans      &trans     &trans    &trans  &trans  &trans
-                        &kp LSHFT  &kp LGUI    &kp LCTRL  &kp LALT
+&trans  &kp F1  &kp F2  &kp F3  &trans    &trans  &kp F4   &kp F5   &kp F6   &trans
+&trans  &kp F7  &kp F8  &kp F9  &trans    &trans  &kp F10  &kp F11  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans   &trans   &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
