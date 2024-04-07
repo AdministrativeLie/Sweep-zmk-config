@@ -238,10 +238,10 @@
 
         qet {
             bindings = <
-&trans  &kp Q   &kp E   &kp T      &trans       &trans    &kp Y    &kp I   &kp P   &trans
-&mo 3   &kp A   &kp D   &kp G      &trans       &trans    &kp H    &kp K   &kp L   &mo 1
-&trans  &trans  &trans  &trans     &none        &none     &trans   &trans  &trans  &trans
-                        &kp LSHFT  &kp SPACE    &kp BSPC  &kp RET
+&trans                &kp Q   &kp E   &kp T   &trans    &trans  &kp Y   &kp I   &kp P   &trans
+&mt LEFT_SHIFT SPACE  &kp A   &kp D   &kp G   &trans    &trans  &kp H   &kp K   &kp L   &mt ENTER BACKSPACE
+&trans                &trans  &trans  &trans  &none     &none   &trans  &trans  &trans  &trans
+                                      &mo 3   &mo 5     &mo 1   &mo 6
             >;
         };
 
@@ -277,6 +277,24 @@
 &trans  &kp F1  &kp F2  &kp F3  &trans    &trans  &kp F4   &kp F5   &kp F6   &trans
 &trans  &kp F7  &kp F8  &kp F9  &trans    &trans  &kp F10  &kp F11  &kp F12  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans   &trans   &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &kp W   &trans  &kp R   &trans    &trans  &kp U   &trans  &kp O   &trans
+&trans  &kp S   &trans  &kp F   &trans    &trans  &kp J   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &kp N2  &trans  &kp N4  &trans    &trans  &kp N7  &trans  &kp N9  &trans
+&trans  &kp X   &trans  &kp V   &trans    &trans  &kp J   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                         &trans  &trans    &trans  &trans
             >;
         };
