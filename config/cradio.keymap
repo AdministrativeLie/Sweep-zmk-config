@@ -238,10 +238,10 @@
 
         qet {
             bindings = <
-&trans                &kp Q   &kp E   &kp T   &trans    &trans  &kp Y   &kp I   &kp P   &trans
-&mt LEFT_SHIFT SPACE  &kp A   &kp D   &kp G   &trans    &trans  &kp H   &kp K   &kp L   &mt ENTER BACKSPACE
-&trans                &trans  &trans  &trans  &none     &none   &trans  &trans  &trans  &trans
-                                      &mo 3   &mo 5     &mo 1   &mo 6
+&trans  &kp Q   &kp E   &kp T   &trans                  &trans               &kp Y   &kp I   &kp P   &trans
+&mo 3   &kp A   &kp D   &kp G   &trans                  &trans               &kp H   &kp K   &kp L   &mo 6
+&trans  &trans  &trans  &trans  &none                   &none                &trans  &trans  &trans  &trans
+                        &mo 5   &mt LEFT_SHIFT SPACE    &mt ENTER BACKSPACE  &mo 1
             >;
         };
 
