@@ -241,16 +241,16 @@
 &trans          &kp Q   &kp W   &kp E   &trans       &trans         &kp Y   &kp U   &kp I   &trans
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D   &trans       &trans         &kp H   &kp J   &kp K   &mo 6
 &trans          &trans  &trans  &trans  &none        &none          &trans  &trans  &trans  &trans
-                                &mo 5   &kp SPACE    &kp BACKSPACE  &mo 1
+                                &mo 1   &kp SPACE    &kp BACKSPACE  &mo 5
             >;
         };
 
         zcb {
             bindings = <
-&trans  &none   &kp R   &kp T   &trans    &trans  &none   &kp O   &kp P   &trans
-&trans  &none   &kp F   &kp G   &trans    &trans  &none   &none   &kp L   &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&trans  &none   &kp R   &kp T   &trans    &trans     &none   &kp O   &kp P   &trans
+&trans  &none   &kp F   &kp G   &trans    &trans     &none   &none   &kp L   &trans
+&trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans
+                        &trans  &trans    &kp ENTER  &trans
             >;
         };
 
