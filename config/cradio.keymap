@@ -27,54 +27,6 @@
     combos {
         compatible = "zmk,combos";
 
-        letter_W {
-            bindings = <&kp W>;
-            key-positions = <1 2>;
-            layers = <0>;
-        };
-
-        letter_R {
-            bindings = <&kp R>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        letter_S {
-            bindings = <&kp S>;
-            key-positions = <11 12>;
-            layers = <0>;
-        };
-
-        letter_F {
-            bindings = <&kp F>;
-            key-positions = <12 13>;
-            layers = <0>;
-        };
-
-        letter_u {
-            bindings = <&kp U>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        letter_o {
-            bindings = <&kp O>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        letter_j {
-            bindings = <&kp J>;
-            key-positions = <17 16>;
-            layers = <0>;
-        };
-
-        letter_x {
-            bindings = <&kp L>;
-            key-positions = <18 17>;
-            layers = <0>;
-        };
-
         arrows {
             bindings = <&mo 3>;
             key-positions = <19 10>;
@@ -120,25 +72,13 @@
         Q+ {
             bindings = <&kp Q>;
             key-positions = <3 2>;
-            layers = <5 6>;
+            layers = <0 1>;
         };
 
         J+ {
             bindings = <&kp J>;
             key-positions = <6 7>;
-            layers = <5 6>;
-        };
-
-        NewKey {
-            bindings = <&to 5>;
-            key-positions = <1 2 3 7 8 6>;
-            layers = <0>;
-        };
-
-        OldKey {
-            bindings = <&to 0>;
-            key-positions = <1 2 3 7 8 6>;
-            layers = <5>;
+            layers = <0 1>;
         };
     };
 
@@ -226,8 +166,8 @@
 
         qet {
             bindings = <
-&trans  &kp Q   &kp E   &kp T    &trans       &trans         &kp Y      &kp I   &kp X   &trans
-&mo 1   &kp A   &kp D   &kp G    &trans       &trans         &kp H      &kp K   &kp P   &mo 2
+&trans  &kp E   &kp R   &kp T    &trans       &trans         &kp I      &kp O   &kp L   &trans
+&mo 1   &kp A   &kp S   &kp D    &trans       &trans         &kp H      &kp K   &kp P   &mo 2
 &trans  &trans  &trans  &trans   &none        &none          &trans     &trans  &trans  &trans
                         &kp RET  &kp SPACE    &kp BACKSPACE  &kp LSHFT
             >;
@@ -235,17 +175,17 @@
 
         zcb {
             bindings = <
-&trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &trans    &trans  &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans  &kp C      &kp V      &kp B      &trans    &trans  &kp N      &kp M    &kp Z     &trans
-&trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans   &trans    &trans
-                              &trans     &trans    &trans  &trans
+&trans  &kp W   &kp F   &kp V   &trans    &trans  &kp Y   &kp U   &kp G   &trans
+&trans  &kp Z   &kp X   &kp C   &trans    &trans  &kp B   &kp N   &kp M   &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
 
         arrows {
             bindings = <
 &trans  &kp ESC    &kp TAB   &kp CAPS  &trans    &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &trans  &mo 4     &kp DOWN  &mo 7      &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &trans  &mo 4     &kp DOWN  &mo 5      &trans
 &trans  &trans     &trans    &trans    &trans    &trans  &trans    &trans    &trans     &trans
                              &trans    &trans    &trans  &trans
             >;
@@ -266,24 +206,6 @@
 &trans  &kp COMMA  &kp DOT   &kp FSLH  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
                              &trans    &trans    &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &kp E   &kp R   &kp T    &trans       &trans    &kp I      &kp O   &kp L   &trans
-&mo 6   &kp A   &kp S   &kp D    &trans       &trans    &kp H      &kp K   &kp P   &mo 2
-&trans  &trans  &trans  &trans   &trans       &trans    &trans     &trans  &trans  &trans
-                        &kp RET  &kp SPACE    &kp BSPC  &kp LSHFT
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &kp W   &kp F   &kp V   &trans    &trans  &kp Y   &kp U   &kp G   &trans
-&trans  &kp Z   &kp X   &kp C   &trans    &trans  &kp B   &kp N   &kp M   &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
             >;
         };
 
