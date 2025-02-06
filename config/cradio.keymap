@@ -27,21 +27,9 @@
     combos {
         compatible = "zmk,combos";
 
-        ARROWS {
-            bindings = <&mo 2>;
-            key-positions = <15 16>;
-            layers = <0 1 2 3 4>;
-        };
-
-        SYMBS {
-            bindings = <&mo 3>;
-            key-positions = <16 17>;
-            layers = <0 1 2 3 4>;
-        };
-
         FN {
             bindings = <&mo 4>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             layers = <0 1 2 3 4>;
         };
 
@@ -53,14 +41,19 @@
 
         CRT {
             bindings = <&kp LCTRL>;
-            key-positions = <26 27>;
+            key-positions = <15 16>;
             layers = <0 4 3 2 1>;
         };
 
         ALT {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <27 28>;
+            key-positions = <16 17>;
             layers = <0 1 2 3 4>;
+        };
+
+        LOOP {
+            bindings = <&kp LA(RCTRL)>;
+            key-positions = <15 16 17>;
         };
     };
 
@@ -148,9 +141,9 @@
 
         BASE1 {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y          &kp U      &kp I      &kp O    &kp SLASH
-&kp A  &kp S  &kp D  &kp F      &kp G        &kp H          &kp J      &kp K      &kp L    &kp P
-&kp Z  &kp X  &kp C  &kp V      &kp B        &kp N          &kp M      &kp COMMA  &kp DOT  &mo 1
+&kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y          &kp U      &kp I  &kp O  &kp SLASH
+&kp A  &kp S  &kp D  &kp F      &kp G        &kp H          &kp J      &kp K  &kp L  &kp P
+&kp Z  &kp X  &kp C  &kp V      &kp B        &kp N          &kp M      &mo 3  &mo 2  &mo 1
                      &kp LSHFT  &kp SPACE    &kp BACKSPACE  &kp ENTER
             >;
         };
