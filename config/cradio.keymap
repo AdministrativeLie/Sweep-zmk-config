@@ -55,84 +55,28 @@
             bindings = <&kp LA(RCTRL)>;
             key-positions = <15 16 17>;
         };
-    };
 
-    macros {
-        mpApp: mpApp {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp P &kp LS(A) &kp P &kp P>;
-            label = "MPAPP";
+        cmd2 {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <24 23>;
+            layers = <0 1 2 3 4>;
         };
 
-        mpDoc: mpDoc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp P &kp LS(D) &kp O &kp C>;
-            label = "MPDOC";
+        crt2 {
+            bindings = <&kp LCTRL>;
+            key-positions = <14 13>;
+            layers = <0 4 3 2 1>;
         };
 
-        open: open {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp P &kp E &kp N>;
-            label = "OPEN";
+        opt2 {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <13 12>;
+            layers = <0 1 2 3 4>;
         };
 
-        ls: ls {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp S>;
-            label = "LS";
-        };
-
-        cd: cd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp D>;
-            label = "CD";
-        };
-
-        onepass: onepass {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp P &kp LS(A) &kp P &kp P &kp SPACE &kp N1 &kp LS(P) &kp A &kp S &kp S &kp W &kp O &kp R &kp D>;
-            label = "ONEPASS";
-        };
-
-        icloud: icloud {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp LS(C) &kp L &kp O &kp U &kp D>;
-            label = "ICLOUD";
-        };
-
-        code: code {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp D &kp E>;
-            label = "CODE";
-        };
-
-        browse: browse {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(B) &kp R &kp O &kp W &kp S &kp E &kp R>;
-            label = "BROWSE";
-        };
-
-        cmd: cmd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LA(N0))>;
-            label = "CMD";
-        };
-
-        closecmd: closecmd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(W)>;
-            label = "CLOSECMD";
+        combo2 {
+            bindings = <&kp LA(RCTRL)>;
+            key-positions = <14 13 12>;
         };
     };
 
@@ -141,7 +85,7 @@
 
         BASE1 {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y          &kp U      &kp I  &kp O  &kp SLASH
+&kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y          &kp U      &kp I  &kp O  &kp SEMICOLON
 &kp A  &kp S  &kp D  &kp F      &kp G        &kp H          &kp J      &kp K  &kp L  &kp P
 &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N          &kp M      &mo 3  &mo 2  &mo 1
                      &kp LSHFT  &kp SPACE    &kp BACKSPACE  &kp ENTER
