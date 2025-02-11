@@ -27,10 +27,10 @@
     combos {
         compatible = "zmk,combos";
 
-        FN {
-            bindings = <&mo 2>;
+        NUM {
+            bindings = <&tog 2>;
             key-positions = <5 6>;
-            layers = <0 1 2 3>;
+            layers = <0 2>;
         };
 
         APPGUI {
@@ -80,9 +80,9 @@
         };
 
         symbs {
-            bindings = <&mo 3>;
+            bindings = <&tog 3>;
             key-positions = <15 16>;
-            layers = <0 1 2 3>;
+            layers = <0 3>;
         };
     };
 
