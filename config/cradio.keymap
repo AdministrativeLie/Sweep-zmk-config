@@ -34,7 +34,7 @@
         };
 
         APPGUI {
-            bindings = <&to 3>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <25 26>;
             layers = <0 1 2 3>;
         };
