@@ -28,7 +28,7 @@
         compatible = "zmk,combos";
 
         NUM {
-            bindings = <&tog 2>;
+            bindings = <&mo 2>;
             key-positions = <5 6>;
             layers = <0 2>;
         };
@@ -42,7 +42,7 @@
         CRT {
             bindings = <&kp LCTRL>;
             key-positions = <26 27>;
-            layers = <0 3 2 1>;
+            layers = <0 3 2 1 4>;
         };
 
         ALT {
@@ -80,9 +80,15 @@
         };
 
         symbs {
-            bindings = <&tog 3>;
+            bindings = <&mo 3>;
             key-positions = <15 16>;
-            layers = <0 3>;
+            layers = <0 3 1 2 4>;
+        };
+
+        fn {
+            bindings = <&mo 4>;
+            key-positions = <16 17>;
+            layers = <0 3 1 2 4>;
         };
     };
 
@@ -109,19 +115,28 @@
 
         NUM {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &to 0     &none    &none   &none   &none
-&kp N6  &kp N7  &kp N8  &kp N9     &kp N0       &kp F1    &kp F2   &kp F3  &kp F4  &kp F5
-&none   &none   &none   &none      &none        &kp F6    &kp F7   &kp F8  &kp F9  &kp F10
+&kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &none     &none    &none  &none  &none
+&kp N6  &kp N7  &kp N8  &kp N9     &kp N0       &none     &none    &none  &none  &none
+&none   &none   &none   &none      &none        &none     &none    &none  &none  &none
                         &kp LSHFT  &kp SPACE    &kp BSPC  &kp RET
             >;
         };
 
         SYMB {
             bindings = <
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &none      &none     &none     &none   &none
-&kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)    &to 0      &none     &none     &trans  &trans
-&kp GRAVE   &kp COMMA   &kp DOT     &kp LBKT    &kp RBKT      &kp EQUAL  &kp APOS  &kp BSLH  &none   &none
-                                    &kp LSHFT   &kp SPACE     &kp BSPC   &kp RET
+&kp GRAVE  &kp EQUAL  &kp COMMA  &kp DOT    &none        &none     &none    &none  &none   &none
+&kp BSLH   &kp APOS   &kp LBKT   &kp RBKT   &none        &none     &none    &none  &trans  &trans
+&none      &none      &none      &none      &none        &none     &none    &none  &none   &none
+                                 &kp LSHFT  &kp SPACE    &kp BSPC  &kp RET
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &none   &none   &none  &none  &none
+&kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &none   &none   &none  &none  &none
+&none   &none   &none   &none   &none      &none   &none   &none  &none  &none
+                        &trans  &trans     &trans  &trans
             >;
         };
     };
